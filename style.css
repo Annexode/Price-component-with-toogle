@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* BODY STYLING */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f7f7ff;
+}
+
+#top-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -9;
+}
+
+#bottom-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+/* PRICING HEAD STYLING (Title and Annualy/Monthly prices + toogle buttons */
+.pricing-strategy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#starting-tittle {
+  color: rgba(36, 34, 34, 0.677);
+  font-size: 20px;
+  font-weight: 750;
+  margin-bottom: 20px;
+}
+.pricing-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.pricing-btn h3 {
+  font-size: 12px;
+  color: rgba(128, 128, 128, 0.864);
+  font-weight: 700;
+}
+
+input {
+  -webkit-appearance: none;
+  position: relative;
+  background: hsl(237, 63%, 64%);
+  width: 50px;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+  outline: none;
+}
+
+input::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 1.4rem;
+  height: 1.4rem;
+  background: white;
+  border-radius: 50%;
+  transition: left 0.3s;
+}
+
+input:checked {
+  background: rgba(0, 0, 255, 0.487);
+}
+
+input:checked::after {
+  left: 70%;
+}
+
+/* PRICING CATEGORIES STYLING */
+.pricing-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#basic-master {
+  background: white;
+  width: 250px;
+  height: 325px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#basic-master h1 {
+  color: rgba(0, 0, 0, 0.774);
+  font-size: 45px;
+  margin: 10px;
+}
+
+#basic-master h2 {
+  font-size: 13px;
+  color: rgb(58, 53, 53);
+  font-weight: 700;
+}
+
+#professional h2 {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#basic-master h3 {
+  border-top: 1px solid gray;
+}
+
+.category h3 {
+  font-size: 10px;
+
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+}
+
+#professional {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  width: 240px;
+  height: 350px;
+  border-radius: 10px;
+  z-index: 100;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+#professional h3 {
+  color: white;
+  font-size: 10px;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+#sending-limit {
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#sending-limit1 {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#professional h1 {
+  color: white;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#professional #learn-more {
+  margin-top: 40px;
+  color: hsl(237, 63%, 64%);
+  background: white;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 0px;
+}
+
+#basic-master #learn-more {
+  font-weight: 500;
+  color: white;
+  margin-top: 40px;
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 5px;
+  border: 0px;
+}
+
+/* HOOVERS */
+#professional #learn-more:hover {
+  margin-top: 40px;
+  color: white;
+  background: hsl(237, 63%, 64%);
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid white;
+}
+
+#basic-master #learn-more:hover {
+  font-weight: 500;
+  background: white;
+  color: hsl(237, 63%, 64%);
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid hsl(237, 63%, 64%);
+}
