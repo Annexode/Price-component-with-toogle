@@ -1,32 +1,32 @@
-let basic_monthly = document.getElementById("basic_monthly");
-let basic_annualy = document.getElementById("basic_annualy");
+const basicMonthly = document.getElementById("basicMonthly");
+const basicAnnualy = document.getElementById("basicAnnualy");
 
-let professioanal_monthly = document.getElementById("professioanal_monthly");
-let professioanal_annualy = document.getElementById("professioanal_annualy");
+const professioanalMonthly = document.getElementById("professioanalMonthly");
+const professioanalAnnualy = document.getElementById("professioanalAnnualy");
 
-let master_monthly = document.getElementById("master_monthly");
-let master_annualy = document.getElementById("master_annualy");
+const masterMonthly = document.getElementById("masterMonthly");
+const masterAnnualy = document.getElementById("masterAnnualy");
 
-let toogle = document.getElementById("toogle_button");
+const toogle = document.getElementById("toogleButton");
 
-basic_monthly.style.display = "none";
-professioanal_monthly.style.display = "none";
-master_monthly.style.display = "none";
+basicMonthly.style.display = "none";
+professioanalMonthly.style.display = "none";
+masterMonthly.style.display = "none";
 
 toogle.addEventListener("click", (e) => {
   if (toogle.checked === true) {
-    basic_monthly.style.display = "";
-    professioanal_monthly.style.display = "";
-    master_monthly.style.display = "";
-    basic_annualy.style.display = "none";
-    professioanal_annualy.style.display = "none";
-    master_annualy.style.display = "none";
+    basicMonthly.style.display = "contents";
+    professioanalMonthly.style.display = "contents";
+    masterMonthly.style.display = "contents";
+    basicAnnualy.style.display = "none";
+    professioanalAnnualy.style.display = "none";
+    masterAnnualy.style.display = "none";
   } else {
-    basic_monthly.style.display = "none";
-    professioanal_monthly.style.display = "none";
-    master_monthly.style.display = "none";
-    basic_annualy.style.display = "";
-    professioanal_annualy.style.display = "";
-    master_annualy.style.display = "";
+    basicMonthly.style.display = "none";
+    professioanalMonthly.style.display = "none";
+    masterMonthly.style.display = "none";
+    basicAnnualy.style.display = "contents";
+    professioanalAnnualy.style.display = "contents";
+    masterAnnualy.style.display = "contents";
   }
 });
